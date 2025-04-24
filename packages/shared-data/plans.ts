@@ -148,6 +148,38 @@ export const plans: PricingInformation[] = [
     preface: '',
     cta: 'Contact Us',
   },
+  {
+    id: 'tier_janne',
+    name: 'Janne',
+    nameBadge: '',
+    costUnit: '/ month',
+    href: 'https://supabase.com/dashboard/new?plan=free',
+    priceLabel: '',
+    priceMonthly: 999,
+    description: 'Perfect for färdigblandad grogg lovers.',
+    preface: 'Get started with:',
+    features: [
+      {
+        partners: [],
+        features: [
+          'Unlimited Färdigblandad grogg',
+          '50,000 unique flavours',
+          ['Access to Janne-AI', 'Unlimited stories from Jannes time in Lanzarote'],
+          'Unlimited late-night kebabs',
+          '10 free braiding sessions',
+          'Community support',
+        ],
+      },
+    ],
+    footer: [
+      {
+        partners: [],
+        footer:
+          'Free trips to Lanzarote are paused after 1 week of inactivity. Limit of 2 active trips.',
+      },
+    ],
+    cta: 'Join for a grogg',
+  },
 ]
 
 export function pickFeatures(plan: PricingInformation, billingPartner: string = '') {

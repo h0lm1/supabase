@@ -8,6 +8,7 @@ import { Button } from 'ui'
 
 import DefaultLayout from '~/components/Layouts/Default'
 import PricingPlans from '~/components/Pricing/PricingPlans'
+import JanneGallery from '~/components/Pricing/JanneGallery'
 import { useOrganizations } from '~/data/organizations'
 
 const PricingComputeSection = dynamic(() => import('~/components/Pricing/PricingComputeSection'))
@@ -84,6 +85,8 @@ export default function IndexPage() {
         organizations={organizations}
         hasExistingOrganizations={hasExistingOrganizations}
       />
+
+      <JanneGallery />
 
       <div className="text-center mt-10 xl:mt-16 mx-auto max-w-lg flex flex-col gap-8">
         <div className="flex justify-center gap-2">
